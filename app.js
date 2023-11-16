@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/user', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'user.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });
 
 app.get('/wallet', (req, res) => {

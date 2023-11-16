@@ -22,6 +22,10 @@ app.get('/wallet', (req, res) => {
 res.sendFile(path.join(__dirname, 'public', 'wallet.html'));
 });
 
+app.get('/apple-app-site-association', (req, res) => {
+  res.sendFile(path.join(__dirname, , 'wallet.html'));
+  });
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);

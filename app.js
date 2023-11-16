@@ -23,7 +23,9 @@ res.sendFile(path.join(__dirname, 'public', 'wallet.html'));
 });
 
 app.get('/apple-app-site-association', (req, res) => {
-  res.sendFile(path.join(__dirname, , 'wallet.html'));
+  res.setHeader("Content-Type", "application/json")
+  res.sendFile(path.join(__dirname, '', 'wallet.html'));
+  
   });
 
 // Start the server

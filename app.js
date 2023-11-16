@@ -14,6 +14,14 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+app.get('/user', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'user.html'));
+  });
+
+app.get('/wallet', (req, res) => {
+res.sendFile(path.join(__dirname, 'public', 'wallet.html'));
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);

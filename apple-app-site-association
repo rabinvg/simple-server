@@ -1,10 +1,15 @@
 {
-   "applinks": {
-       "details": [
-           {
-               "appID": "W6945M9UKD.com.lif3.lif3wallet",
-		"paths": ["/wallet/*"]
-           }
-       ]
-   }
-}
+    "applinks": {
+        "details": [
+             {
+               "appIDs": [ "W6945M9UKD.com.lif3.lif3wallet" ],
+               "components": [
+                 {
+                    "/": "/wallet*",
+                    "comment": "Matches any URL whose path starts with /buy/"
+                 }
+               ]
+             }
+         ]
+     }
+  }

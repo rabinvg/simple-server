@@ -6,7 +6,15 @@
                "components": [
                  {
                     "/": "/wallet*",
-                    "comment": "Matches any URL whose path starts with /buy/"
+                    "comment": "Matches any URL whose path starts with /wallet"
+                 },
+                 {
+                    "/": "/tokens*",
+                    "comment": "Matches any URL whose path starts with /tokens"
+                 },
+                 {
+                    "/": "/swap*",
+                    "comment": "Matches any URL whose path starts with /swap"
                  }
                ]
              }

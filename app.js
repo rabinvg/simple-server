@@ -41,6 +41,11 @@ app.get('/apple-app-site-association', (req, res) => {
   
   });
 
+  app.get('/.well-known/walletconnect.txt', (req, res) => {
+    res.sendFile(path.join(__dirname, '' , '/.well-known/walletconnect.txt'));
+    
+    });
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
